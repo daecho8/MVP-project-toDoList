@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+body{
+    
+    background-color: aliceblue;
+}
+
+.header-container {
+    padding: 20px 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    width: 800px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.header-title {
+    margin-left: 40px;
+    padding-left: 38%;
+    color: yellowgreen;
+}
+.header-owner {
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: yellow;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+#title-one {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    color: whitesmoke;
+    background-color: rgb(25, 25, 95);
+    width: 800px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    box-shadow: 0 5px 10px black;
+    width: 800px;
+
+}
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(73, 143, 193);
+    color: rgb(244, 220, 0);
+    font-size: 15px;
+}
+.input::placeholder {
+    color: white;
+}
+#add-btn {
+    width: 100px;
+    background-color: black;
+    color: aquamarine;
+}
+
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.new-list {
+    width: 700px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: lightskyblue;
+    color: darkblue;
+}
+li {
+    width: 700px;
+    border: 1px dashed gray;
+    height: 60px;
+    position: relative;
+    list-style-type: none;
+    color: black;
+    font-size: 20px;
+    align-items: center;
+    padding-left: 30px;
+}
+.delete-btn {
+    border-radius: 10px;
+    width: 80px;
+    right: 20px;
+    position: absolute;
+    color: aquamarine;
+    background-color: black;
+}
+
+.get-list-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.get-list {
+    border: 2px double gray;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+#get-btn {
+    width: 200px;
+    background-color: black;
+    color: aquamarine;
+    height: 30px;
+    width: 250px;
+}
+.all-list-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.old-list {
+    width: 700px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    color: darkgreen;
+}
+.old-task {
+    width: 700px;
+    border: 1px dashed gray;
+    height: 50px;
+    position: relative;
+    list-style-type: none;
+}

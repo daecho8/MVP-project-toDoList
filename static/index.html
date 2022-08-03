@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="header-title">TO DO LIST</div>
+            <div class="header-owner">MVP Project</div>
+        </div>
+    </div>
+    <div class="title-container">
+        <div id="title-one"> Enter your Task information</div>
+    </div>
+
+    <div class="search-container">
+        <div class="search">
+            <input id="task-name" type="text" class="input" placeholder="Enter Task Name">
+            <input id="task-location" type="text" class="input" placeholder="Enter Task Location">
+            <input id="task-number" type="text" class="input" placeholder="Enter Task Duration">
+            <button id="add-btn">ADD</button>
+        </div>
+    </div>
+
+    <div class="list-container">
+        <ul class="new-list">
+            <!-- <li class="new-task">TASK ONE<button id="delete-btn">DELETE</button></li> -->
+        </ul>
+    </div>
+
+    
+    <div class="get-list-container">
+        <div class="get-list">
+            <button id="get-btn">SHOW ALL TASKS</button>
+            <!-- <button class="delete-btn">DELETE</button> -->
+        </div>
+    </div>
+
+    <div class="all-list-container">
+        <ul class="old-list">
+            <!-- <li class="old-task">TASK ONE<button id="delete-btn">DELETE</button></li>
+            <li class="old-task">TASK TWO<button id="delete-btn">DELETE</button></li> -->
+        </ul>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
