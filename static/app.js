@@ -44,7 +44,7 @@ function addBtnClick() {
     );
 }
 
-let showBtnClick = function () {
+function showBtnClick() {
     fetch("/list")
     .then((data) => {
         return data.json();
