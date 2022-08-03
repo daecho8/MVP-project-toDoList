@@ -45,9 +45,11 @@ function addBtnClick() {
 }
 
 function showBtnClick() {
+    console.log("checking1");
     fetch('/list')
     .then((data) => {
         return data.json();
+        console.log("checking2");
     })
     .then((allData) => {
         console.log(allData);
