@@ -45,10 +45,16 @@ function addBtnClick() {
 }
 
 function showBtnClick() {
-    fetch("/list")
-    .then((data) => {
-        return data.json();
-    }).then((allData) => {
+    fetch('/list', {
+        method: 'POST',
+        body: JSON.stringify(newTask),
+        headers: { 'Content-Type': 'application/json' }
+    }).then(res => res.json())
+    // fetch("/list")
+    // .then((data) => {
+    //     return data.json();
+    // })
+    .then((allData) => {
         console.log(allData);
         let allList = "";
         allData.map((row) => {
