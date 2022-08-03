@@ -45,14 +45,10 @@ function addBtnClick() {
 }
 
 function showBtnClick() {
-    fetch('/list', {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json' }
-    }).then(res => res.json())
-    // fetch("/list")
-    // .then((data) => {
-    //     return data.json();
-    // })
+    fetch('/list')
+    .then((data) => {
+        return data.json();
+    })
     .then((allData) => {
         console.log(allData);
         let allList = "";
