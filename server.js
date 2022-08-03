@@ -11,15 +11,20 @@ const app = express();
 app.use(express.json());
 app.use(express.static('static')); 
 
-const pool = new pg.Pool({
-    connectionString: DATABASE_URL,
-    ssl: NODE_ENV === "production" ? { rejectionUnauthorized: false } : false
-});
-app.use(express.urlencoded({ extended: true }));
-//sss
 // const pool = new pg.Pool({
-//     // database: 'todolist'
+//     connectionString: DATABASE_URL,
+//     ssl: NODE_ENV === "production" ? { rejectionUnauthorized: false } : false
 // });
+
+// app.use(express.urlencoded({ extended: true }));
+
+const pool = new pg.Pool({
+    // database: 'foods',
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+    }
+});
 
 app.get("/", (req, res) => {
     readFile("static/index.html", "utf-8").then(string => {
