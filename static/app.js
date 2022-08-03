@@ -25,7 +25,7 @@ function addBtnClick() {
     const newLi = document.createElement("li");
     newLi.innerText = AAA;
     ulEl.appendChild(newLi);
-//sdfsdfsss
+
     fetch('/list', {
         method: 'POST',
         body: JSON.stringify(newTask),
@@ -43,7 +43,7 @@ function addBtnClick() {
     }
     );
 }
-//sdfa
+
 function showBtnClick() {
     console.log("checking1");
     fetch('/list')
@@ -57,6 +57,7 @@ function showBtnClick() {
         allData.map((row) => {
             const ulEl = document.querySelector(".old-list");
             const oldLi = document.createElement("li");
+            oldLi.innerText ="";
             oldLi.innerText = `TASK: ${row.task_name}, AT: ${row.task_location}, Duration: ${row.task_number} min`;
             ulEl.appendChild(oldLi);            
             const deleteButton = document.createElement("div");
