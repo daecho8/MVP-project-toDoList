@@ -48,13 +48,12 @@ function showBtnClick() {
     // console.log("checking1");
     fetch('/list')
     .then((data) => {
-        // return data.json();
-        data.json();
-        console.log("checking2");
+        // console.log("checking2");
+        return data.json();
     })
     .then((allData) => {
         console.log(allData);
-        let allList = "";
+        // let allList = "";
         allData.map((row) => {
             const ulEl = document.querySelector(".old-list");
             const oldLi = document.createElement("li");
