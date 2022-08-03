@@ -72,7 +72,7 @@ function showBtnClick() {
             })
         
         function deleteMethod() {
-            fetch("/list" +"/" + row["id"], {
+            fetch("/list" +"/" + row.id, {
                 method: 'DELETE'
             }).then(()=> {
                 console.log('Deleted');

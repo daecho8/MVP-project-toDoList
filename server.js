@@ -15,6 +15,7 @@ const pool = new pg.Pool({
     connectionString: DATABASE_URL,
     ssl: NODE_ENV === "production" ? { rejectionUnauthorized: false } : false
 });
+app.use(express.urlencoded({ extended: true }));
 //sss
 // const pool = new pg.Pool({
 //     // database: 'todolist'
