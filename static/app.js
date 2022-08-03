@@ -46,8 +46,7 @@ function addBtnClick() {
 
 function showBtnClick() {
     fetch('/list', {
-        method: 'POST',
-        body: JSON.stringify(newTask),
+        method: 'GET',
         headers: { 'Content-Type': 'application/json' }
     }).then(res => res.json())
     // fetch("/list")
