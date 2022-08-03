@@ -46,7 +46,7 @@ function addBtnClick() {
 //sdfa
 function showBtnClick() {
     console.log("checking1");
-    fetch('/')
+    fetch('/list')
     .then((data) => {
         return data.json();
         console.log("checking2");
